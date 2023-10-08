@@ -1,5 +1,3 @@
-import React from "react";
-
 const ContactUs = () => {
 	return (
 		<section id="contact" className="contact">
