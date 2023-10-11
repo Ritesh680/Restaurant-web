@@ -30,6 +30,6 @@ jobs:
           npm install -g wrangler
 
       - name: Login and publish to cloudflare using wrangler wrangler
-        run: wrangler deploy src/index.html
+        run: wrangler deploy index.html
         env:
           CLOUDFLARE_API_TOKEN: ${{secrets.CLOUDFLARE_API_TOKEN}}
