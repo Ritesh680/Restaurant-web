@@ -27,9 +27,7 @@ jobs:
 
       - name: Install Wrangler
         run: |
-          npm install @cloudflare/wrangler
-
-          export CLOUDFLARE_API_TOKEN = $CLOUDFLARE_API_TOKEN
+          npm install wrangler
 
       - name: Login and publish to cloudflare using wrangler wrangler
         run: wrangler publish
