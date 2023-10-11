@@ -1,0 +1,15 @@
+name = "my-cloudflare-worker"
+type = "javascript"
+account_id = "4c56d734ab8a0f07ce8ebd3cf8404506"  # Your Cloudflare account ID
+workers_dev = true
+
+[build]
+  command = "npm run build" 
+  upload_format = "modules"
+
+[site]
+  bucket = "./public"  # Path to your site's static files, if applicable
+  entry-point = "index.html"  # Replace with the entry point of your static site
+
+[env.production]
+  APP_API_URL = "https://restro.riteshpaudel679.com.np"  # Environment-specific variables
